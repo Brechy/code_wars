@@ -44,3 +44,15 @@ function pickIt(arr){
 function multiply(a, b){
   return a * b
 }
+
+function openOrSenior(data) {
+  let memberCategories = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i][0] >= 55 && data[i][1] > 7) {
+      memberCategories.push('Senior');
+    } else {
+      memberCategories.push('Open');
+    }
+  }
+  return memberCategories;
+}
